@@ -27,7 +27,7 @@ export default function Carousel() {
   return (
     <div className="relative w-full mb-8">
       <Swiper
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 5000 }}
         speed={1000}
         pagination={{ clickable: true }}
         onSwiper={(s) => setSwipe(s)}
@@ -70,14 +70,14 @@ export default function Carousel() {
       <button
         onClick={slidePrev}
         style={{ zIndex: "9" }}
-        className="absolute top-1/2 -left-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
+        className="absolute top-1/2 -left-3 md:-left-5  w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
       >
         <Image src={LeftArrowIcon} alt="left arrow" />
       </button>
       <button
         onClick={slideNext}
         style={{ zIndex: "9" }}
-        className="absolute top-1/2 -right-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
+        className="absolute top-1/2 -right-3 md:-right-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
       >
         <Image src={RightArrowIcon} alt="right arrow" />
       </button>
