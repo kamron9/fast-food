@@ -39,7 +39,9 @@ export default function Carousel() {
           <Image
             src={Carousel1}
             height={420}
-            className={"w-full h-[420px] object-cover object-center"}
+            className={
+              "w-full max-h-[420px] h-auto aspect-video object-cover object-center"
+            }
             alt={"img-1"}
           />
         </SwiperSlide>
@@ -47,7 +49,9 @@ export default function Carousel() {
           <Image
             src={Carousel2}
             height={420}
-            className={"w-full h-[420px] object-cover object-center"}
+            className={
+              "w-full max-h-[420px] h-auto aspect-video object-cover object-center"
+            }
             alt={"img-2"}
           />
         </SwiperSlide>
@@ -55,7 +59,9 @@ export default function Carousel() {
           <Image
             src={Carousel3}
             height={420}
-            className={"w-full h-[420px] object-cover object-center"}
+            className={
+              "w-full max-h-[420px] h-auto aspect-video object-cover object-center"
+            }
             alt={"img-3"}
           />
         </SwiperSlide>
@@ -63,13 +69,15 @@ export default function Carousel() {
       {/* carousel arrows */}
       <button
         onClick={slidePrev}
-        className="absolute top-1/2 z-10 -left-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
+        style={{ zIndex: "9" }}
+        className="absolute top-1/2 -left-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
       >
         <Image src={LeftArrowIcon} alt="left arrow" />
       </button>
       <button
         onClick={slideNext}
-        className="absolute top-1/2 z-10 -right-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
+        style={{ zIndex: "9" }}
+        className="absolute top-1/2 -right-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
       >
         <Image src={RightArrowIcon} alt="right arrow" />
       </button>

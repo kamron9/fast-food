@@ -10,14 +10,14 @@
 	box-shadow: 0 4px 10px 0 rgba(46, 16, 102, 0.25);
 }
 .swiper-pagination-bullet{
-	background-color: white !important;
+	background-color: #5946D7 !important;
 	width: 50px !important;
 	height: 4px !important;
 	border-radius: 5px !important;
 	opacity: 0.5 !important;
 }
 .swiper-pagination-bullet-active{
-	background-color: white !important;
+	background-color: #5946D7 !important;
 	width: 50px !important;
 	height: 4px !important;
 	border-radius: 5px !important;

@@ -13,7 +13,11 @@ export default function RootLayout({ children }) {
         {/* chakra provider */}
         <Provider>
           <Header />
-          <main className={"bg-whiteSmoke min-h-screen w-full mt-7"}>
+          <main
+            className={
+              "bg-whiteSmoke min-h-screen w-full mt-[90px] md:mt-[20px]"
+            }
+          >
             <div className={"container "}>{children}</div>
           </main>
         </Provider>
