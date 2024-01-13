@@ -1,10 +1,11 @@
 import Carousel from "@/components/carousel/Carousel";
+import WhyWe from "@/components/whyWe/WhyWe";
 
 const HomePage = () => {
   return (
     <div>
       <Carousel />
-
+      <WhyWe />
       <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eum
         ipsum maxime voluptates. Adipisci animi, autem blanditiis delectus dolor

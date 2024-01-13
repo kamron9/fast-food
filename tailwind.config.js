@@ -40,6 +40,10 @@ module.exports = {
         gray: "#F4F5F7",
         black: "#1B1D1F",
         transparent: "transparent",
+        green: "#EEFDD7",
+        orange: "rgba(253,233,210)",
+        lightPurple: "rgba(228,233,255)",
+        pink: "rgba(255,235,235)",
       },
 
       backgroundImage: {
