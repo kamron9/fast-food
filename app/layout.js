@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         {/* chakra provider */}
         <Provider>
           <Header />
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
               "bg-whiteSmoke min-h-screen w-full mt-[90px] md:mt-[20px]"
             }
           >
-            <div className={"container "}>{children}</div>
+            <div className={"container"}>{children}</div>
           </main>
         </Provider>
       </body>

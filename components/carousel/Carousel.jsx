@@ -28,7 +28,7 @@ export default function Carousel() {
     <div className="relative w-full mb-8">
       <Swiper
         autoplay={{ delay: 5000 }}
-        speed={1000}
+        // speed={1000}
         pagination={{ clickable: true }}
         onSwiper={(s) => setSwipe(s)}
         modules={[Pagination, Autoplay]}
