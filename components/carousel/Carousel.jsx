@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Carousel() {
   const [swipe, setSwipe] = useState({});

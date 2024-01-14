@@ -28,6 +28,7 @@ module.exports = {
         deepPurple: "#2F2B4A",
         purple: "#2E1066",
         gray: "#DEDEE2",
+        deepGray: "rgb(154, 166, 172)",
         black: "#1B1D1F",
         whiteSmoke: "#FAFAFD",
       },

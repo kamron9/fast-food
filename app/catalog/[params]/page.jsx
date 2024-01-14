@@ -1,9 +1,10 @@
-'use client'
-import { usePathname } from 'next/navigation'
+"use client";
+import { useParams } from "next/navigation";
 
 const Catalog = () => {
-	const navigation = usePathname()
-	return <div>Category : {navigation}</div>
-}
+  const { params } = useParams();
+  console.log(params);
+  return <div>Category : {params}</div>;
+};
 
-export default Catalog
+export default Catalog;
