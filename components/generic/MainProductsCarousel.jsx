@@ -21,7 +21,7 @@ const MainProductsCarousel = ({ title, products }) => {
     swipe.slideNext();
   };
   return (
-    <div>
+    <div className={"mb-20"}>
       {/*section title */}
       <div>
         <h1 className={"text-2xl font-bold"}>{title}</h1>
@@ -30,19 +30,21 @@ const MainProductsCarousel = ({ title, products }) => {
       <div className={"w-full h-fit relative"}>
         <Swiper
           onSwiper={(s) => setSwipe(s)}
-          slidesPerView={2}
           spaceBetween={"10px"}
           modules={[Pagination]}
           loop={true}
           breakpoints={{
-            640: {
+            0: {
+              slidesPerView: 1,
+            },
+            500: {
               slidesPerView: 2,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 3,
             },
-            1024: {
-              slidesPerView: 5,
+            992: {
+              slidesPerView: 4,
             },
           }}
         >
@@ -51,25 +53,35 @@ const MainProductsCarousel = ({ title, products }) => {
               className={"w-full bg-white rounded-xl"}
               key={product.id}
             >
-              <div>
+              <div className={"w-full flex justify-center"}>
                 <Image
                   src={product.img}
                   alt={product.title}
                   width={300}
                   height={208}
+                  className={"w-full"}
                 />
               </div>
               {/* card body */}
               <div className={"p-2"}>
-                <h3 className={"font-bold"}>{product.title}</h3>
+                <h3 className={"font-bold product-card-title"}>
+                  {product.title}
+                </h3>
                 <p className={"product-card-text my-2"}>
                   {product.description}
                 </p>
-                <span>
-                  {Number(product.price).toLocaleString()}
+                <span className={"text-bold"}>
+                  {product.price}
                   сум
                 </span>
               </div>
+              <button
+                className={
+                  "w-full py-2 border border-solid border-[#2E1066] rounded-md text-primary hover:bg-primary hover:text-white transition"
+                }
+              >
+                В корзину
+              </button>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -77,14 +89,14 @@ const MainProductsCarousel = ({ title, products }) => {
         <button
           onClick={slidePrev}
           style={{ zIndex: "9" }}
-          className="absolute top-1/2 -left-3 md:-left-5  w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
+          className="absolute top-1/3 -left-3 md:-left-5  w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
         >
           <Image src={LeftArrowIcon} alt="left arrow" />
         </button>
         <button
           onClick={slideNext}
           style={{ zIndex: "9" }}
-          className="absolute top-1/2 -right-3 md:-right-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
+          className="absolute top-1/3 -right-3 md:-right-5 w-10 h-10 rounded-lg bg-white flex items-center justify-center carousel-arrows"
         >
           <Image src={RightArrowIcon} alt="right arrow" />
         </button>

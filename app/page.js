@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <div>
       <Carousel />
-      <WhyWe />
       <MainProducts />
+      <WhyWe />
     </div>
   );
 };
