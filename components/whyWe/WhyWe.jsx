@@ -27,7 +27,7 @@ const WhyWe = () => {
           {/* control card */}
           <div
             className={
-              "h-fit lg:h-[388px] xl:h-fit bg-green rounded-[40px] py-9 px-7 relative overflow-hidden"
+              "h-fit sm:h-[320px] bg-green rounded-[40px] py-9 px-7 lg:px-3 xl:px-7 relative overflow-hidden"
             }
           >
             <Image
@@ -37,8 +37,8 @@ const WhyWe = () => {
               height={52}
             />
             <b className="inline-block mt-4">Контроль качества блюд</b>
-            <div className={"mt-14"}>
-              <p>
+            <div className={"mt-10 lg:mt-3 xl:mt-10"}>
+              <p className={"card-text"}>
                 Косметический ремонт квартир обычно включает в себя: окрашивание
                 потолков, поклейка обоев на стены
               </p>
@@ -53,7 +53,7 @@ const WhyWe = () => {
           {/* fast and delicious card */}
           <div
             className={
-              "h-fit lg:h-[388px] xl:h-fit bg-orange rounded-[40px] px-7 py-9 relative overflow-hidden"
+              "h-fit sm:h-[320px] bg-orange rounded-[40px] px-7 py-9 lg:px-3 xl:px-7 relative overflow-hidden"
             }
           >
             <Image
@@ -62,11 +62,11 @@ const WhyWe = () => {
               alt={"protection-icon"}
               height={52}
             />
-            <b className="inline-block mt-4">Быстро, вкусно, натурально</b>
-            <div className={"mt-14"}>
-              <p>
-                Косметический ремонт квартир обычно включает в себя: окрашивание
-                потолков, поклейка обоев на стены
+            <b className="inline-block mt-4">Быстро и вкусно</b>
+            <div className={"mt-10 lg:mt-3 xl:mt-10"}>
+              <p className={"card-text"}>
+                Быстрая подача ваших любимых блюд, приготовленных исключительно
+                из натуральных продуктов
               </p>
             </div>
             <Image
@@ -79,7 +79,7 @@ const WhyWe = () => {
           {/* menu card */}
           <div
             className={
-              "h-fit lg:h-[388px] xl:h-fit bg-lightPurple rounded-[40px] py-9 px-7 relative overflow-hidden"
+              "h-fit sm:h-[320px] bg-lightPurple rounded-[40px] py-9 px-7 lg:px-3 xl:px-7 relative overflow-hidden"
             }
           >
             <Image
@@ -89,8 +89,8 @@ const WhyWe = () => {
               height={52}
             />
             <b className="inline-block mt-4">Разнообразное меню</b>
-            <div className={"mt-14"}>
-              <p>
+            <div className={"mt-10 lg:mt-3 xl:mt-10"}>
+              <p className={"card-text"}>
                 Косметический ремонт квартир обычно включает в себя: окрашивание
                 потолков, поклейка обоев на стены
               </p>
@@ -105,7 +105,7 @@ const WhyWe = () => {
           {/* delivery card */}
           <div
             className={
-              "h-fit lg:h-[388px] xl:h-fit bg-pink rounded-[40px] py-9 px-7 relative overflow-hidden"
+              "h-fit sm:h-[320px] bg-pink rounded-[40px] py-9 px-7 lg:px-3 xl:px-7  relative overflow-hidden"
             }
           >
             <Image
@@ -115,8 +115,8 @@ const WhyWe = () => {
               height={52}
             />
             <b className="inline-block mt-4">Разнообразное меню</b>
-            <div className={"mt-14"}>
-              <p>
+            <div className={"mt-10 lg:mt-3 xl:mt-10"}>
+              <p className={"card-text"}>
                 Косметический ремонт квартир обычно включает в себя: окрашивание
                 потолков, поклейка обоев на стены
               </p>

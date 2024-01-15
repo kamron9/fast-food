@@ -23,21 +23,55 @@ const Footer = () => {
   return (
     <div className={"bg-gray py-12"}>
       <div className={"container"}>
-        <div className={"flex items-center justify-between"}>
+        <div>
+          <Image src={logo} alt={"logo"} height={100} />
+        </div>
+        <div className={"flex items-center justify-between "}>
           {/*  logo */}
           <div>
-            <Image src={logo} alt={"logo"} height={70} />
+            {/* Телефон поддержки */}
+            <div className={"flex flex-col mb-2"}>
+              <span className={"text-deepGray text-xs sm:text-base"}>
+                Телефон поддержки
+              </span>
+              <Link href={"tel:+99891990899"}>
+                <b className={"text-[14px] sm:text-base"}>
+                  +998 (91) 999 08 99
+                </b>
+              </Link>
+            </div>
+            {/* Адрес  */}
+            <div className={"flex flex-col mb-2"}>
+              <span className={"text-xs sm:text-base"}>Адрес</span>
+              <b className={"text-[14px] sm:text-base"}>Даритал, Ургенч</b>
+            </div>
+            {/* email */}
+            <div className={"flex flex-col"}>
+              <span className={"text-xs sm:text-base"}>Email</span>
+              <Link href={"mailto:sofiyafood@gmail.com"}>
+                <b className={"text-[14px] sm:text-base"}>
+                  sofiyafood@gmail.com
+                </b>
+              </Link>
+            </div>
           </div>
           {/*   navigations */}
-          <nav className={"flex items-center gap-4 flex-wrap"}>
-            {navigations.map((link) => (
+          <div className={"hidden md:flex flex-col gap-2"}>
+            {navigations.slice(0, 5).map((link) => (
               <Link className={"text-black"} key={link.path} href={link.path}>
                 {link.title}
               </Link>
             ))}
-          </nav>
+          </div>
+          <div className={"hidden md:flex flex-col gap-2"}>
+            {navigations.slice(5).map((link) => (
+              <Link className={"text-black"} key={link.path} href={link.path}>
+                {link.title}
+              </Link>
+            ))}
+          </div>
           {/* download play-market and app-store */}
-          <div className={"flex items-center gap-2"}>
+          <div className={"flex flex-col gap-4"}>
             {/* play market image */}
             <Image
               onClick={addToast}
