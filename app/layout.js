@@ -1,6 +1,7 @@
 import Header from "@/Layout/Header/Header";
 import "../assets/globals.css";
 import Provider from "./chakraProvider";
+import Footer from "@/Layout/Footer/Footer";
 export const metadata = {
   title: "Sofiya - fast food",
   description: "fast delivery fast food",
@@ -15,11 +16,12 @@ export default function RootLayout({ children }) {
           <Header />
           <main
             className={
-              "bg-whiteSmoke min-h-screen w-full mt-[90px] md:mt-[20px]"
+              "bg-whiteSmoke min-h-screen w-full py-[90px] md:pt-[20px]"
             }
           >
             <div className={"container"}>{children}</div>
           </main>
+          <Footer />
         </Provider>
       </body>
     </html>
