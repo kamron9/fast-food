@@ -42,12 +42,16 @@ const Footer = () => {
             </div>
             {/* Адрес  */}
             <div className={"flex flex-col mb-2"}>
-              <span className={"text-xs sm:text-base"}>Адрес</span>
+              <span className={"text-deepGray text-xs sm:text-base"}>
+                Адрес
+              </span>
               <b className={"text-[14px] sm:text-base"}>Даритал, Ургенч</b>
             </div>
             {/* email */}
             <div className={"flex flex-col"}>
-              <span className={"text-xs sm:text-base"}>Email</span>
+              <span className={"text-deepGray text-xs sm:text-base"}>
+                Email
+              </span>
               <Link href={"mailto:sofiyafood@gmail.com"}>
                 <b className={"text-[14px] sm:text-base"}>
                   sofiyafood@gmail.com
